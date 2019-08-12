@@ -10,12 +10,12 @@ Elasticsearch version: 6.1.1 or above
 
 Stanford Core NLP version: stanford-corenlp-full-2017-06-09
 
-Usage:
+**Usage:
 
 `spark-submit --packages org.scalaj:scalaj-http_2.11:2.4.2,org.json:json:20180813 --class "CaseIndex"
 --master local[2] JAR_FILE FULL_PATH_OF_DIRECTORY_WITH_CASE_FILES`
 
-input format:
+**input format:
 ```
 <?xml version="1.0"?>
 <case>
@@ -33,9 +33,43 @@ input format:
 </case>
 ```
 
-The schema above shows that a case is made of:
+**The schema above shows that a case is made of:**
 * A name (\<name\>): This is the title of the case
 * Source URL (\<AustLII\>): The original source of the legal report
 * A list of catchphrases (\<catchphrases\>): These are short sentences that summarize the
 case
 * Sentences (\<sentences\>): The list of sentences contained in the legal case report
+
+**index and mapping:**
+```
+{
+  "legal_idx": {
+    "aliases": {},
+    "mappings": {
+      "properties": {
+        "AustLII": {
+          "type": "text"
+        },
+        "id": {
+          "type": "text"
+        },
+        "location": {
+          "type": "text"
+        },
+        "name": {
+          "type": "text"
+        },
+        "organization": {
+          "type": "text"
+        },
+        "person": {
+          "type": "text"
+        },
+        "sentence": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
+```
