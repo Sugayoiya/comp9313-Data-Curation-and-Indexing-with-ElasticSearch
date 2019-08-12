@@ -11,6 +11,7 @@ Elasticsearch version: 6.1.1 or above(need to do something in CaseIndex.scala #2
 Stanford Core NLP version: stanford-corenlp-full-2017-06-09
 
 **Usage:**
+
 at root directory:
 `~$: sbt package`
 
