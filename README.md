@@ -34,8 +34,8 @@ input format:
 ```
 
 The schema above shows that a case is made of:
-* A name (<name>): This is the title of the case
-* Source URL (<AustLII>): The original source of the legal report
-* A list of catchphrases (<catchphrases>): These are short sentences that summarize the
+* A name (\<name\>): This is the title of the case
+* Source URL (\<AustLII\>): The original source of the legal report
+* A list of catchphrases (\<catchphrases\>): These are short sentences that summarize the
 case
-* Sentences (<sentences>): The list of sentences contained in the legal case report
+* Sentences (\<sentences\>): The list of sentences contained in the legal case report
