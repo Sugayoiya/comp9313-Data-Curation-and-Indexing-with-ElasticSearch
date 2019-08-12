@@ -10,6 +10,14 @@ Elasticsearch version: 6.1.1 or above(need to do something in CaseIndex.scala #2
 
 Stanford Core NLP version: stanford-corenlp-full-2017-06-09
 
+**what this program does:**
+
+* Create the index (in ElasticSearch) with the corresponding mapping.
+* Perform the necessary data curation tasks to transform the input data into the representation
+used for indexing (i.e., XML to JSON representation mapping), and enrich the original data
+with the three entity types specified above (i.e., person, location and organization).
+* Index the curated/enriched data using ElasticSearch.
+
 **Usage:**
 
 at root directory:
