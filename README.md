@@ -6,7 +6,7 @@ Spark version: 2.4.3
 
 Scala version: 2.11.12
 
-Elasticsearch version: 6.1.1 or above
+Elasticsearch version: 6.1.1 or above(need to do something in CaseIndex.scala #27-30)
 
 Stanford Core NLP version: stanford-corenlp-full-2017-06-09
 
