@@ -10,12 +10,12 @@ Elasticsearch version: 6.1.1 or above
 
 Stanford Core NLP version: stanford-corenlp-full-2017-06-09
 
-**Usage:
+**Usage:**
 
 `spark-submit --packages org.scalaj:scalaj-http_2.11:2.4.2,org.json:json:20180813 --class "CaseIndex"
 --master local[2] JAR_FILE FULL_PATH_OF_DIRECTORY_WITH_CASE_FILES`
 
-**input format:
+**input format:**
 ```
 <?xml version="1.0"?>
 <case>
